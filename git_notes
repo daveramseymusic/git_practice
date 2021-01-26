@@ -1,3 +1,13 @@
+summary:
+git init creates a new Git repository
+git status inspects the contents of the working directory and staging area
+git add adds files from the working directory to the staging area
+git diff shows the difference between the working directory and the staging area
+git commit permanently stores file changes from the staging area in the repository
+git log shows a list of all previous commits
+
+
+
 Git notes
 
 git status
@@ -22,8 +32,6 @@ Often with Git, you’ll need to refer back to an earlier version of a project. 
 
 git log
 
-
-
 ON token:
 Using a token on the command line
 Once you have a token, you can enter it instead of your password when performing Git operations over HTTPS.
@@ -37,7 +45,6 @@ Personal access tokens can only be used for HTTPS Git operations. If your reposi
 
 If you are not prompted for your username and password, your credentials may be cached on your computer. You can update your credentials in the Keychain to replace your old password with the token.
 - here is the webpage for that: https://docs.github.com/en/github/using-git/updating-credentials-from-the-osx-keychain
-
 
 
 In Git, the commit you are currently on is known as the HEAD commit. In many cases, the most recently made commit is the HEAD commit.
@@ -127,3 +134,13 @@ git branch branch_name: Creates a new branch.
 git checkout branch_name: Used to switch from one branch to another.
 git merge branch_name: Used to join file changes from one branch to another.
 git branch -d branch_name: Deletes the branch specified.
+
+For pushing remotely:
+
+$ git remote add origin  <REMOTE_URL> 
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+
+#push what you have committed to out from your computer to github
+git push -u 
